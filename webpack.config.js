@@ -1,18 +1,27 @@
 module.exports = {
-  entry: "./index.jsx",
+  entry: "./app/App.jsx",
   output: {
-    filename: "public/bundle.js"
+    path: __dirname,
+    filename: "bundle.js",
+    publicPath: '/assets/'
+  },
+  devServer: {
+    inline: true,
+    port: 8000
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
       }
     ]
   },
-  externals: {
-    'react' : 'React'
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   }
 };
