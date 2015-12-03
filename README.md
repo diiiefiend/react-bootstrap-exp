@@ -11,6 +11,7 @@ boilerplate react-bootstrap setup that I can hopefully just pull from going forw
 ####Dev server/loaders
 - webpack
 - webpack-dev-server
+- react-hot-loader
 - babel-core
 - babel-loader
 - babel-preset-es2015

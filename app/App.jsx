@@ -2,6 +2,6 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import Hello from './Hello';
+import Layout from './layout/Layout';
 
-render(<Hello />, document.getElementById('app'));
+render(<Layout />, document.getElementById('app'));

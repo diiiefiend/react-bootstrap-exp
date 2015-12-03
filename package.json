@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --progress --colors --content-base public/"
+    "dev": "webpack-dev-server --progress --colors --hot --content-base public/"
   },
   "author": "Ariel",
   "license": "ISC",
@@ -20,7 +20,11 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.0.12",
     "babel-preset-react": "^6.0.15",
+    "react-hot-loader": "^1.3.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
+  },
+  "babel": {
+    "presets": ["es2015", "react"]
   }
 }
